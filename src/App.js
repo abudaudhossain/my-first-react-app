@@ -5,20 +5,25 @@ function App() {
  
   return (
     <div className="App">
-      <Person></Person>
-      <Person></Person>
-      <Person></Person>
-      <Person></Person>
+      <Person name="Abu Daud Hossain" job="Web Devloper"></Person>
+      <Person name="Raule Mia" job="Techer"></Person>
+      <Person name="Rahes Kha"></Person>
+      <Person name="Sakib al Hassan" job="Criketer"></Person>
+      <Person name="Abu Daud Hossain" job="Web Devloper"></Person>
+      <Person name="Raule Mia" job="Techer"></Person>
+      <Person name="Rahes Kha"></Person>
+      <Person name="Sakib al Hassan" job="Criketer"></Person>
       
     </div>
   );
 }
 
-function Person() {
+function Person(props) {
+  console.log(props);
   return (
     <div className="person">
-      <h1>Abu Daud Hossain Sumon</h1>
-      <p>Full Stack Devloper</p>
+      <h1>{props.name}</h1>
+      <h4>{props.job}</h4>
     </div>
   );
 }
